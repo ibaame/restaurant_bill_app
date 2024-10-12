@@ -1,0 +1,48 @@
+name: restaurant_bill_app
+description: Restaurant Bill App.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.7
+  # state management
+  provider: ^6.0.5
+  # save data to local
+  shared_preferences: ^2.2.2
+  # Alert
+  rflutter_alert: ^2.0.7
+  # icon of app
+  flutter_launcher_icons: ^0.13.1
+  # rename name of app and ID
+  rename: ^3.0.1
+
+# icon of app
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+  windows:
+    generate: true
+    image_path: "assets/icon.png"
+    icon_size: 48 # min:48, max:256, default: 48
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
